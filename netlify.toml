@@ -5,15 +5,8 @@
 [build.processing]
   pretty_urls = true
 
-# Proxy WordPress API calls to the live WordPress site
 [[redirects]]
   from = "/wp-json/*"
   to = "https://www.161london.com/wp-json/:splat"
   status = 200
   force = true
-[build]
-  publish = "."
-  command = ""
-
-[build.processing]
-  pretty_urls = true
