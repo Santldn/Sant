@@ -1,0 +1,12 @@
+# Mac system files
+.DS_Store
+.Trash/
+*.swp
+
+# Backup folders
+www.161london-backup/
+site-backup-branding/
+
+# Node or other temp files
+node_modules/
+
