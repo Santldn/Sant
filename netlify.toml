@@ -10,3 +10,6 @@
   to = "https://www.161london.com/wp-json/:splat"
   status = 200
   force = true
+
+[functions]
+  directory = "netlify/functions"
