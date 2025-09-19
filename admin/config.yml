@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "content/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "."
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "socials"
+    label: "Social Links"
+    folder: "content/socials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Instagram", name: "instagram", widget: "string" }
+      - { label: "Facebook", name: "facebook", widget: "string" }
+
+  - name: "images"
+    label: "Images"
+    folder: "content/images"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
